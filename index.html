@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+    </head>
+    <body oncontextmenu="showCustomMenu(true,event.clientX, event.clientY); return false;"
+    onclick="showCustomMenu(false, event.clientX, event.clientY); return false;">
+        <script src="script.js"></script>
+        
+
+        <div id="custommenu" style="width: 250px; height: 80px;visibility: hidden;" >
+            <style>div:hover{outline: 1px solid black;}</style>
+            <div style="background-Color: silver; color: navy; font-Size: 10pt;" onclick="doAction('copy');">Скопіювати вміст документа</div>
+            
+            <div style="background-Color: silver; color: navy; font-Size: 10pt;" onclick="doAction('close');">Закрити вікно</div>
+            
+            <div style="background-Color: silver; color: navy; font-Size: 10pt;" onclick="doAction('fontIncrease');">Збільшити шрифт</div>
+            <div style="background-Color: silver; color: navy; font-Size: 10pt;" onclick="doAction('fontDincrease');">Зменшити шрифт</div>
+            
+            <div style="background-Color: silver; color: navy; font-Size: 10pt;" onclick="doAction('changeBkg');">Змінити фон</div>
+            
+            </div>
+            
+            <p>fvdffdfdv</p>
+            
+                
+        <img src="sun.jpg" width="200px" onmousemove="this.src='moon.jpg'" 
+        onmouseout="this.src='sun.jpg'" >
+
+        <input type="text" onkeypress="return checkSymbol(event.keyCode)">
+            
+    </body>
+</html>
